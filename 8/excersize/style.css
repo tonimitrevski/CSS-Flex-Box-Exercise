@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 700px;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+}
+
+.control:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.control.has-addon {
+    display: flex;
+}
+
+.control.has-addon .control-field {
+    flex: 1;
+    border: 1px solid #e3e3e3;
+}
+
+.control.has-addon .control-field:focus + .control-addon {
+    border: 1px solid #00b1b3;
+    border-left: none;
+    animation: fadeColor 2s;
+    animation-iteration-count: infinite;
+}
+
+.control.has-addon .control-field:focus {
+    outline: 0;
+    border: 1px solid #00b1b3;
+    border-right: none;
+}
+
+.control.has-addon .control-addon {
+    min-width: 25px;
+    background: #e3e3e3;
+    text-align: center;
+}
+
+.control > * {
+    padding: .8em;
+}
+
+@keyframes fadeColor {
+    50% {
+        color: #026c6d;
+    }
+}
+
+
+

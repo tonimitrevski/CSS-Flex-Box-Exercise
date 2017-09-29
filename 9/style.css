@@ -1,0 +1,39 @@
+* { margin: 0; padding: 0; }
+
+body, html {
+    height: 100%;
+}
+
+header {
+    background: red;
+}
+
+footer {
+    background: pink;
+}
+
+aside {
+    background: yellow;
+    flex-basis: 175px;
+}
+
+main {
+    background: blue;
+    flex: 1
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header, footer {
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 480px){
+    .container > * {
+        flex-basis: 100%;
+    }
+}
