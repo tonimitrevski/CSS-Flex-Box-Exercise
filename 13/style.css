@@ -1,0 +1,19 @@
+body {
+    margin-top: 40px;
+}
+.container {
+    width: 800px;
+    margin: auto;
+    background: #e3e3e3;
+    display: grid;
+    grid-template-columns: .5fr 2fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 16px;
+}
+
+.container > div {
+    background: #999;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+}
